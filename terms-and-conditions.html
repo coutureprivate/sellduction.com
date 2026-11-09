@@ -1,0 +1,755 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Conditions | SELLDUCTION</title>
+  <meta name="description" content="Terms and Conditions for using www.sellduction.com, the official website of the book SELLDUCTION by Marius Bogdan Pislariu: content use, intellectual property, disclaimers and governing law." />
+  <link rel="canonical" href="https://www.sellduction.com/terms-and-conditions.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="SELLDUCTION" />
+  <meta property="og:title" content="Terms and Conditions | SELLDUCTION" />
+  <meta property="og:description" content="Terms and Conditions for using www.sellduction.com, the official website of the book SELLDUCTION by Marius Bogdan Pislariu: content use, intellectual property, disclaimers and governing law." />
+  <meta property="og:url" content="https://www.sellduction.com/terms-and-conditions.html" />
+  <meta property="og:image" content="https://www.sellduction.com/cover-sellduction-en.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" /><link rel="dns-prefetch" href="//fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'" /><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" /></noscript>
+  <style>
+    :root {
+      --grad-start: #fd5564;
+      --grad-end: #fe3c72;
+      --gradient: linear-gradient(135deg, #fd5564, #fe3c72);
+      --dark: #0d0d0d;
+      --font-head: 'Inter', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--dark);
+      color: #e0e0e0;
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ========== HEADER ========== */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 0 40px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: background 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    header.scrolled {
+      background: #fff;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-wrap img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+
+    .logo-wordmark {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    nav a {
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: 0.875rem;
+      color: #fff;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0; right: 0;
+      height: 2px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+    }
+
+    nav a:hover::after { transform: scaleX(1); }
+
+    header.scrolled nav a { color: #111; }
+
+    header.scrolled nav a:hover { color: var(--grad-start); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: background 0.3s, transform 0.3s, opacity 0.3s;
+    }
+
+    header.scrolled .hamburger span { background: #111; }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 72px; left: 0; right: 0;
+      background: #111;
+      padding: 24px 40px;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: 1rem;
+      color: #e0e0e0;
+      border-bottom: 1px solid #222;
+      padding-bottom: 16px;
+      transition: color 0.2s;
+    }
+
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a:hover { color: var(--grad-start); }
+
+    /* ========== HERO ========== */
+    .hero {
+      position: relative;
+      background: var(--dark);
+      padding: 140px 24px 72px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(253,85,100,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* diagonal line pattern */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        rgba(255,255,255,0.025) 0px,
+        rgba(255,255,255,0.025) 1px,
+        transparent 1px,
+        transparent 28px
+      );
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      line-height: 1.1;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+    }
+
+    .divider-bar {
+      width: 60px;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 2px;
+      margin: 0 auto;
+    }
+
+    /* ========== MAIN CONTENT ========== */
+    .content-section {
+      background: #111;
+      padding: 80px 24px;
+    }
+
+    .content-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .intro-paragraph {
+      font-size: 1.05rem;
+      color: #ccc;
+      line-height: 1.8;
+      margin-bottom: 56px;
+      padding: 24px 28px;
+      border-left: 3px solid var(--grad-start);
+      background: rgba(253,85,100,0.06);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .tc-section {
+      margin-bottom: 52px;
+    }
+
+    .tc-section h2 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .tc-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      border-radius: 50%;
+      background: var(--gradient);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+
+    .tc-section p {
+      color: #bbb;
+      font-size: 0.975rem;
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .tc-section p:last-child { margin-bottom: 0; }
+
+    .pink-list {
+      list-style: none;
+      margin: 14px 0 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pink-list li {
+      color: #bbb;
+      font-size: 0.975rem;
+      line-height: 1.7;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .pink-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gradient);
+    }
+
+    .pink-link {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    .pink-link:hover { opacity: 0.75; }
+
+    /* ========== SCROLL REVEAL ========== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: #0a0a0a;
+      padding: 60px 40px 0;
+      border-top: 1px solid #1e1e1e;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    .footer-logo-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .footer-logo-wrap img { height: 34px; width: auto; }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      align-items: center;
+    }
+
+    .footer-nav a {
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: 0.875rem;
+      color: #999;
+      transition: color 0.2s;
+    }
+
+    .footer-nav a:hover { color: var(--grad-start); }
+    .footer-nav a.active, .footer-bottom-links a.active { color: var(--grad-start) !important; font-weight: 600; }
+
+    .footer-socials {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.2s, background 0.2s;
+      color: #888;
+    }
+
+    .social-icon:hover {
+      border-color: var(--grad-start);
+      background: rgba(253,85,100,0.1);
+      color: var(--grad-start);
+    }
+
+    .social-icon svg { width: 16px; height: 16px; fill: currentColor; }
+
+    .footer-bottom {
+      padding: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-bottom-copy {
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+    }
+
+    .footer-bottom-links a {
+      font-size: 0.8rem;
+      color: #555;
+      transition: color 0.2s;
+    }
+
+    .footer-bottom-links a:hover { color: var(--grad-start); }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      header { padding: 0 20px; }
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .mobile-nav { padding: 20px 24px; }
+
+      .hero { padding: 120px 20px 60px; }
+      .hero h1 { font-size: 2rem; }
+
+      .content-section { padding: 60px 20px; }
+
+      footer { padding: 48px 20px 0; }
+      .footer-top { flex-direction: column; gap: 32px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <a href="/index.html" class="logo-wrap">
+      <img src="simbol%20sellduction%20logo.png" alt="SELLDUCTION logo" />
+      <span class="logo-wordmark">SELLDUCTION</span>
+    </a>
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/the-sellduction-book.html">The SELLDUCTION Book</a>
+      <a href="/about-the-author.html">About the Author</a>
+      <a href="/about-innovators-university.html">Innovators' University</a>
+      <a href="/resources.html">Resources</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="/index.html">Home</a>
+    <a href="/the-sellduction-book.html">The SELLDUCTION Book</a>
+    <a href="/about-the-author.html">About the Author</a>
+    <a href="/about-innovators-university.html">Innovators' University</a>
+    <a href="/resources.html">Resources</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Legal</span>
+      <h1>Terms and Conditions</h1>
+      <div class="divider-bar"></div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="content-section">
+    <div class="content-wrap">
+
+      <p class="intro-paragraph reveal">
+        <strong>Last updated: November 6, 2026.</strong><br />
+        Welcome to www.sellduction.com (the "Website"). The Website is operated by SELLDUCTION, the brand of Marius Bogdan Pislariu, author of the book SELLDUCTION, based in Romania (the "Operator", "we", "us"). By accessing or using the Website you agree to be bound by these Terms and Conditions (the "Terms"). If you do not agree with any part of the Terms, please do not use the Website.
+      </p>
+
+      <!-- 1 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">1</span> About the Website</h2>
+        <p>The Website is a static, informational website whose purpose is to present the book SELLDUCTION, its author, Innovators' University and related free resources (articles, videos, downloadable materials and newsletter content). The Website does not sell products directly and does not process payments. Where the Website refers to buying the book, the purchase takes place on third-party platforms (such as Amazon or other retailers and publishers) under their own terms of sale.</p>
+        <p>You must be at least 16 years old to subscribe to our newsletter or otherwise submit personal information through the Website. The Website is not directed to children.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">2</span> Changes to these Terms</h2>
+        <p>We may update these Terms from time to time, for example to reflect changes in the Website, in the law or in the services we use. The current version is always published on this page together with its "Last updated" date. Your continued use of the Website after a revised version is published constitutes your acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">3</span> Intellectual property</h2>
+        <p>All content on the Website, including texts, book excerpts, titles, concepts, methods, frameworks, images, photographs, videos, graphics, logos, layout and code, is protected by copyright, trademark and other intellectual property laws and belongs to SELLDUCTION, Marius Bogdan Pislariu and/or the respective rights holders. SELLDUCTION, the SELLDUCTION logo, and the "Relationship VS Relationsh!t" concept and encyclopedia are distinctive signs and works of the Operator.</p>
+        <p>Without our prior written consent, you may not:</p>
+        <ul class="pink-list">
+          <li>copy, reproduce or republish any part of the Website or the book, in any medium;</li>
+          <li>distribute, sell, rent, license or otherwise commercially exploit the content;</li>
+          <li>modify, translate, adapt or create derivative works based on the content;</li>
+          <li>remove or alter any copyright, trademark or other proprietary notices;</li>
+          <li>use the SELLDUCTION name, logo or concepts to suggest an affiliation or endorsement that does not exist;</li>
+          <li>use automated tools (scrapers, bots, crawlers) to extract content, other than standard search-engine indexing.</li>
+        </ul>
+        <p>You may view, download and print pages from the Website for your personal, non-commercial use, provided all proprietary notices are kept intact. Short quotations for review, commentary or educational purposes are permitted to the extent allowed by applicable law, with clear attribution to SELLDUCTION and Marius Bogdan Pislariu. Free downloadable materials offered on the Website (such as the "Relationship VS Relationsh!t" encyclopedia) are licensed for personal use only and may not be resold or redistributed.</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">4</span> Acceptable use of the Website</h2>
+        <p>You agree to use the Website lawfully and responsibly. In particular, you must not:</p>
+        <ul class="pink-list">
+          <li>use the Website for any unlawful, fraudulent or harmful purpose;</li>
+          <li>attempt to gain unauthorized access to the Website, its hosting infrastructure or any connected system or data;</li>
+          <li>introduce viruses, malware or any code designed to disrupt or damage the Website;</li>
+          <li>interfere with the proper functioning, integrity, security or availability of the Website;</li>
+          <li>submit false, misleading or third-party information through our forms.</li>
+        </ul>
+        <p>We reserve the right to restrict or block access to the Website for any user who violates these Terms, and to take any legal action we consider appropriate.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">5</span> Purchases on third-party platforms</h2>
+        <p>The book SELLDUCTION, in its print, e-book and other editions, is sold through independent third-party retailers and platforms (including Amazon). When you click a link to buy the book, you leave the Website and enter into a contract with that retailer. Prices, availability, shipping, payment, returns, refunds and customer service are governed exclusively by the terms and policies of the respective platform. Prices shown on the Website are indicative, may vary by country and currency, and may be changed by the retailer at any time.</p>
+        <p>Pre-registration for special editions (for example the Premium Edition) through a form on the Website does not constitute a purchase or a binding order; it only expresses your interest in being notified when the edition becomes available.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">6</span> Newsletter and sign-up forms</h2>
+        <p>The Website allows you to subscribe to the SELLDUCTION newsletter and community updates. These forms are provided and processed by Kajabi through the Innovators' University account (innovators-university.com). By subscribing you agree to receive information about SELLDUCTION, educational materials, updates, offers and event invitations. You can unsubscribe at any time using the link included in every e-mail. Your data is not sold to third parties. For details about how personal data is processed, please read our <a href="/privacy-policy.html" class="pink-link">Privacy Policy</a>.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">7</span> Third-party links and embedded content</h2>
+        <p>The Website contains links to, and embedded content from, third-party websites and services, including Amazon and other retailers, Kajabi / Innovators' University, YouTube, Facebook, Instagram, TikTok, LinkedIn and X. These services are not operated or controlled by us. We are not responsible for their content, availability, terms, privacy practices or any damage arising from your use of them. A link does not imply our endorsement of the linked site. We recommend reading the terms and privacy policies of every third-party service you use.</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">8</span> Disclaimer</h2>
+        <p>The content of the Website and of the book SELLDUCTION is provided for general informational and educational purposes only. It reflects the personal experience and opinions of the author and is not professional business, sales, financial, legal, psychological or other advice. You should seek the advice of qualified professionals before making decisions that may affect your business or your life.</p>
+        <p>We do not guarantee any specific results, income, sales or other outcomes from reading the book, applying its methods or using the Website. Results depend on many factors outside our control, including your own effort, skills, market conditions and circumstances. Testimonials published on the Website reflect the individual experiences of the people quoted and are not a promise of similar results.</p>
+        <p>The Website is provided "as is" and "as available". To the fullest extent permitted by law, we make no warranties of any kind, express or implied, regarding the accuracy, completeness, reliability or uninterrupted availability of the Website or its content, or that it is free of errors, viruses or other harmful components.</p>
+      </div>
+
+      <!-- 9 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">9</span> Limitation of liability</h2>
+        <p>To the fullest extent permitted by applicable law, the Operator, its author and collaborators shall not be liable for any direct, indirect, incidental, consequential, special or punitive damages, including loss of profits, revenue, data or business opportunity, arising out of or in connection with your access to or use of (or inability to use) the Website, its content, or any linked third-party service, even if we have been advised of the possibility of such damages.</p>
+        <p>Nothing in these Terms excludes or limits liability that cannot be excluded or limited under applicable law, including liability for death or personal injury caused by negligence, for fraud, or any rights you have as a consumer under the mandatory laws of your country of residence.</p>
+      </div>
+
+      <!-- 10 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">10</span> Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of Romania, the country where the Operator is established, and, where applicable, by European Union law. If you are a consumer residing in another country, you also benefit from any mandatory consumer-protection provisions of the law of your country of residence that cannot be waived by agreement.</p>
+        <p>We will always try to resolve any dispute amicably first. If that is not possible, disputes shall be submitted to the competent courts of Romania, without prejudice to the right of consumers to bring proceedings before the courts of their place of residence where mandatory law so provides. Consumers in the European Union may also use the EU Online Dispute Resolution platform.</p>
+      </div>
+
+      <!-- 11 -->
+      <div class="tc-section reveal">
+        <h2><span class="tc-num">11</span> General provisions and contact</h2>
+        <p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force. Our failure to enforce any right does not constitute a waiver of that right. These Terms, together with our <a href="/privacy-policy.html" class="pink-link">Privacy Policy</a> and <a href="/cookie-policy.html" class="pink-link">Cookie Policy</a>, form the entire agreement between you and us regarding the use of the Website.</p>
+        <p>These legal pages are provided for information and transparency; they do not constitute legal advice. If you have questions about your own rights or obligations, please consult a qualified lawyer in your jurisdiction.</p>
+        <p>For questions about these Terms you can contact us through the contact form and the official SELLDUCTION social channels listed on this Website.</p>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo-col">
+        <a href="/index.html" class="footer-logo-wrap">
+          <img src="simbol%20sellduction%20logo.png" alt="SELLDUCTION logo" />
+          <span class="logo-wordmark">SELLDUCTION</span>
+        </a>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="/index.html">Home</a>
+        <a href="/the-sellduction-book.html">The SELLDUCTION Book</a>
+        <a href="/about-the-author.html">About the Author</a>
+        <a href="/about-innovators-university.html">Innovators' University</a>
+        <a href="/resources.html">Resources</a>
+      </nav>
+
+      <div class="footer-socials">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/SELLDUCTION" class="social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987H7.898V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/sellduction/" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/showcase/sellduction/" class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@sellduction" class="social-icon" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+          </svg>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="https://x.com/Sellduction" class="social-icon" aria-label="X">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-bottom-copy">Copyright &copy;2026 SELLDUCTION. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="/cookie-policy.html">Cookie Policy</a>
+        <a href="/terms-and-conditions.html">Terms and Conditions</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Active footer link ── */
+    (function(){
+      var path = window.location.pathname.replace(/\/+$/, '');
+      document.querySelectorAll('.footer-nav a, .footer-bottom-links a').forEach(function(a){
+        var href = a.getAttribute('href').replace(/\/+$/, '');
+        if(path === href || path === href.replace('.html','')) a.classList.add('active');
+      });
+    })();
+  </script>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+
+<!-- ═══ COOKIE BANNER ═══ -->
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1a1a1a;border-top:1px solid rgba(253,85,100,.25);padding:18px 24px;box-shadow:0 -8px 40px rgba(0,0,0,.5);font-family:Inter,sans-serif;" role="dialog" aria-label="Cookie consent">
+  <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:14px;flex:1;min-width:260px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#fd5564" stroke-width="1.8"/><circle cx="8.5" cy="10" r="1.2" fill="#fd5564"/><circle cx="14" cy="7.5" r="0.9" fill="#fd5564"/><circle cx="15.5" cy="13" r="1.2" fill="#fd5564"/><circle cx="10" cy="15" r="0.9" fill="#fd5564"/></svg>
+      <p style="margin:0;font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.5;">
+        This website uses cookies. By continuing to browse, you agree to our use of cookies.
+        <a href="/cookie-policy.html" style="color:#fd5564;text-decoration:underline;margin-left:6px;white-space:nowrap;">Learn more</a>
+      </p>
+    </div>
+    <div style="display:flex;gap:10px;flex-shrink:0;">
+      <button onclick="declineCookies()" style="padding:10px 22px;border-radius:50px;font-family:Inter,sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;background:transparent;border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.5);">Decline</button>
+      <button onclick="acceptCookies()" style="padding:10px 28px;border-radius:50px;font-family:Inter,sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;border:none;background:linear-gradient(135deg,#fd5564,#fe3c72);color:#fff;box-shadow:0 4px 20px rgba(253,85,100,.35);">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){var b=document.getElementById('cookieBanner');if(!localStorage.getItem('sdCookieConsent')){b.style.display='block';}})();
+function acceptCookies(){localStorage.setItem('sdCookieConsent','accepted');hideBanner();}
+function declineCookies(){localStorage.setItem('sdCookieConsent','declined');hideBanner();}
+function hideBanner(){var b=document.getElementById('cookieBanner');b.style.transition='opacity .4s ease,transform .4s ease';b.style.opacity='0';b.style.transform='translateY(20px)';setTimeout(function(){b.style.display='none';},400);}
+</script>
+</body>
+</html>
